@@ -45,6 +45,7 @@ Ex.: para especificar dia 27 de março de 2018 as 07:15:00 no Brasil ( GMT-3 ):
     **2018-03-27T07:15:00.000-03:00**
 
 Programa de exemplo usando esta classe:
+==
 
     import arcsight
     import time
@@ -56,3 +57,9 @@ Programa de exemplo usando esta classe:
     dicionario=logger.busca(busca,ini="2018-03-27T00:00:00.000-03:00", fim="2018-03-28T00:00:00.000-03:00")
     #retornando a busca em um dataframe
     df=logger.busca(busca,ini="2018-03-27T00:00:00.000-03:00", fim="2018-03-28T00:00:00.000-03:00",dataframe=True)
+
+Instalação de requisitos:
+=
+    pip3 install -r requirements.txt
+
+*Obs.: o pip deve ser referente ao python3.*
